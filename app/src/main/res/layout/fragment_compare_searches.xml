@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Pages.Home.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Main Content - Select searches for comparison -->
+        <LinearLayout
+            android:id="@+id/compare_searches_select_items_comparison"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <!-- Selected searches -->
+            <FrameLayout
+                android:id="@+id/compare_searches_selected_items_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/compare_searches_selected_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="visible" />
+
+            </FrameLayout>
+
+            <!-- Search History -->
+            <LinearLayout
+                android:id="@+id/compare_searches_search_history_rv_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/compare_searches_msg_select_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/compare_lbl_selected_items"
+                    android:textColor="@color/color_white_2" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/compare_searches_search_history_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="0dp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <!-- Bottom -->
+            <Button
+                android:id="@+id/compare_searches_btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_rectangle_orange_rounded_borders"
+                android:paddingEnd="30dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingStart="30dp"
+                android:text="@string/lbl_btn_confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Main Content - Select searches for comparison -->
+        <ScrollView
+            android:id="@+id/compare_searches_comparison_container_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/compare_searches_comparison_main_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Shareable content: p1 -->
+                <FrameLayout
+                    android:id="@+id/compare_searches_shareable_content_p1_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/component_shareable_content_selector" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/compare_searches_shareable_content_p1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/compare_searches_comparison_lbl_values_period"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/compare_lbl_values_per_period"
+                        android:textColor="@color/color_green_9"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <!-- Section 1: Investments per citizen -->
+                    <LinearLayout
+                        android:id="@+id/compare_searches_investments_per_citizen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Value per citizen per day -->
+                        <FrameLayout
+                            android:id="@+id/compare_searches_compare_value_citizen_day"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <include
+                                layout="@layout/component_compare_horizontal_bar_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp" />
+
+                        </FrameLayout>
+
+                        <!-- Value per citizen per year -->
+                        <FrameLayout
+                            android:id="@+id/compare_searches_compare_value_citizen_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <include
+                                layout="@layout/component_compare_horizontal_bar_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="25dp" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- ./Shareable content: p1 -->
+
+                <!-- Shareable content: p2 -->
+                <FrameLayout
+                    android:id="@+id/compare_searches_shareable_content_p2_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <include layout="@layout/component_shareable_content_selector" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/compare_searches_shareable_content_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:orientation="vertical">
+
+                    <!-- Value invested by own city -->
+                    <FrameLayout
+                        android:id="@+id/compare_searches_compare_value_invested_own_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/component_compare_horizontal_bar_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="25dp" />
+
+                    </FrameLayout>
+
+                    <!-- Value invested by other sources -->
+                    <FrameLayout
+                        android:id="@+id/compare_searches_compare_value_invested_other_sources"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/component_compare_horizontal_bar_chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="25dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+                <!-- ./Shareable content: p2 -->
+
+                <!-- Shareable content: p3 -->
+                <FrameLayout
+                    android:id="@+id/compare_searches_shareable_content_p3_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <include layout="@layout/component_shareable_content_selector" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/compare_searches_shareable_content_p3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:orientation="vertical">
+
+                    <!-- Section 2: Total Investments -->
+                    <TextView
+                        android:id="@+id/compare_searches_comparison_lbl_investments_ph"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/compare_lbl_investments_ph"
+                        android:textColor="@color/color_green_9"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:id="@+id/compare_searches_compare_total_investments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/component_compare_total_investments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+                <!-- ./Shareable content: p3 -->
+
+                <!-- Shareable content: p4 -->
+                <FrameLayout
+                    android:id="@+id/compare_searches_shareable_content_p4_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <include layout="@layout/component_shareable_content_selector" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/compare_searches_shareable_content_p4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:orientation="vertical">
+
+                    <!-- Section 3: Declared expenses -->
+                    <TextView
+                        android:id="@+id/compare_searches_comparison_lbl_declared_expenses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="25dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/compare_lbl_declared_expenses_ph"
+                        android:textColor="@color/color_green_9"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <FrameLayout
+                        android:id="@+id/compare_searches_compare_expenses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            layout="@layout/component_compare_list_expenses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+                <!-- ./Shareable content: p4 -->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Msg: Need to search for something -->
+        <include
+            layout="@layout/component_msg_no_search_selected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Social Network Picker -->
+        <FrameLayout
+            android:id="@+id/social_network_picker_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/component_social_network_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <!-- Confirm sharing action -->
+        <FrameLayout
+            android:id="@+id/compare_searches_btns_confirm_cancel_sharing_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_rectangle_black_transparent_no_borders_no_gradient"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:visibility="gone">
+
+            <include layout="@layout/component_share_confirm_action" />
+
+        </FrameLayout>
+
+        <!-- Msg: Need to give permission to access the external storage -->
+        <FrameLayout
+            android:id="@+id/component_permission_external_storage_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray_1"
+            android:visibility="gone">
+
+            <include layout="@layout/component_msg_give_permission_external_storage" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

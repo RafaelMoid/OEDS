@@ -1,0 +1,66 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="DialogThemeFull" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="ListSelectorLgTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ListSelectorSmTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ListSelectorLgWhiteTextStyle" parent="ListSelectorLgTextStyle">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="ListSelectorLgBlackTextStyle" parent="ListSelectorLgTextStyle">
+        <item name="android:textColor">@color/color_black_3</item>
+    </style>
+
+    <style name="ListSelectorSmWhiteTextStyle" parent="ListSelectorSmTextStyle">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="ListSelectorSmBlackTextStyle" parent="ListSelectorSmTextStyle">
+        <item name="android:textColor">@color/color_black_3</item>
+    </style>
+
+    <style name="ListSelectorSmGrayTextStyle" parent="ListSelectorSmTextStyle">
+        <item name="android:textColor">@color/color_gray_9</item>
+    </style>
+
+</resources>

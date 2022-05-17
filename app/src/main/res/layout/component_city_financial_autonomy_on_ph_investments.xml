@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_city_financial_autonomy_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="30dp"
+    android:background="@color/color_white"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/component_autonomy_index_main_lbl"
+                android:textColor="@color/color_black_3"/>
+
+            <TextView
+                android:id="@+id/component_city_financial_autonomy_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_black_3"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="@string/component_autonomy_index_aux_info_msg"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/component_city_financial_autonomy"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_green_blue_3"
+            android:background="@drawable/background_white_gray_borders"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_ranking_cities_by_financial_autonomy_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingStart="25dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingEnd="25dp"
+    android:paddingBottom="30dp"
+    android:background="@color/color_white"
+    android:visibility="gone">
+
+    <!-- Chart title -->
+    <TextView
+        android:id="@+id/component_ranking_cities_by_financial_autonomy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="@string/component_chart_city_ranking_autonomy_index_title"
+        android:textSize="15sp"
+        android:textColor="@color/color_green_9"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="start"
+        android:text="@string/component_chart_city_ranking_autonomy_index_title_info"
+        android:textColor="@color/color_gray_9"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/component_chart_city_ranking_autonomy_index_label_y_axis"
+        android:textSize="11sp"
+        tools:ignore="SmallSp"
+        android:lineSpacingMultiplier="0.8"
+        android:textColor="@color/color_gray_8"
+        android:textStyle="normal"
+        android:visibility="visible"/>
+
+    <!-- Chart -->
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/component_ranking_cities_by_financial_autonomy"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"/>
+
+    <!-- Chart legend -->
+    <LinearLayout
+        android:id="@+id/component_ranking_cities_by_financial_autonomy_custom_chart_legend"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp">
+
+        <!-- The legend is built dynamically -->
+
+    </LinearLayout>
+
+    <!-- Chart Legends -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@drawable/background_white_gray_borders">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/ico_line_chart_yellow"
+            android:drawableStart="@drawable/ico_line_chart_yellow"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/component_chart_city_ranking_autonomy_index_label_avg"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:textColor="@color/color_gray_9"
+            android:textStyle="normal"/>
+
+        <include layout="@layout/component_gray_line"/>
+
+        <TextView
+            android:id="@+id/component_ranking_cities_by_financial_autonomy_legend_searched_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ico_bar_chart_searched_city_effort"
+            android:drawableStart="@drawable/ico_bar_chart_searched_city_effort"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/component_chart_city_ranking_autonomy_index_label_city_effort_searched"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:textColor="@color/color_gray_9"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/component_ranking_cities_by_financial_autonomy_legend_best_in_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ico_bar_chart_best_effort_country"
+            android:drawableStart="@drawable/ico_bar_chart_best_effort_country"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/component_chart_city_ranking_autonomy_index_label_city_effort_best_country"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:textColor="@color/color_gray_9"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/component_ranking_cities_by_financial_autonomy_legend_worst_in_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ico_bar_chart_worst_effort_country"
+            android:drawableStart="@drawable/ico_bar_chart_worst_effort_country"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/component_chart_city_ranking_autonomy_index_label_city_effort_worst_country"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:textColor="@color/color_gray_9"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/component_ranking_cities_by_financial_autonomy_legend_best_in_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ico_bar_chart_best_effort_state"
+            android:drawableStart="@drawable/ico_bar_chart_best_effort_state"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/component_chart_city_ranking_autonomy_index_label_city_effort_best_state"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:textColor="@color/color_gray_9"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/component_ranking_cities_by_financial_autonomy_legend_worst_in_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ico_bar_chart_worst_effort_state"
+            android:drawableStart="@drawable/ico_bar_chart_worst_effort_state"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/component_chart_city_ranking_autonomy_index_label_city_effort_worst_state"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
+            android:textColor="@color/color_gray_9"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/component_compare_total_investments_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginBottom="25dp"
+        android:visibility="visible"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:id="@+id/component_compare_total_investments_a"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/component_total_investment_on_city_ph"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_gray_10"/>
+
+        <FrameLayout
+            android:id="@+id/component_compare_total_investments_b"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/component_total_investment_on_city_ph"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Federal Investments on the public health of a city -->
+    <FrameLayout
+        android:id="@+id/component_compare_total_investments_legend_federal_gov_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <include layout="@layout/component_federal_investment_on_city_ph"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/component_compare_total_investments_legend_federal_gov_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <include layout="@layout/component_federal_investment_on_city_ph"/>
+
+    </FrameLayout>
+
+    <!-- State Investments on the public health of the city -->
+    <FrameLayout
+        android:id="@+id/component_compare_total_investments_legend_state_gov_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <include layout="@layout/component_state_investment_on_city_ph"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/component_compare_total_investments_legend_state_gov_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <include layout="@layout/component_state_investment_on_city_ph"/>
+
+    </FrameLayout>
+
+    <!-- Investments made by other sources on the public health of the city -->
+    <FrameLayout
+        android:id="@+id/component_compare_total_investments_legend_other_source_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <include layout="@layout/component_other_sources_investment_on_city_ph"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/component_compare_total_investments_legend_other_source_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <include layout="@layout/component_other_sources_investment_on_city_ph"/>
+
+    </FrameLayout>
+
+</LinearLayout>

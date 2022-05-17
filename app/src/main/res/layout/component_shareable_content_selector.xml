@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/component_shareable_content_picker"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:layout_marginLeft="-5dp"
+    android:layout_marginStart="-5dp"
+    android:layout_marginRight="-5dp"
+    android:layout_marginEnd="-5dp"
+    android:padding="25dp"
+    android:background="@drawable/background_light_gray_with_borders">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingStart="4dp"
+        android:paddingRight="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:src="@drawable/ico_share_btn_white"
+        android:background="@drawable/background_circle_orange"
+        android:contentDescription="@string/description_ico_share"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/component_shareable_content_picker_wish_share_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_black_3"/>
+
+    <CheckBox
+        android:id="@+id/component_shareable_content_picker_checkbox"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

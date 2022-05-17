@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/component_total_public_health_investments_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingEnd="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="15dp"
+    android:background="@color/color_white"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/component_total_public_health_investments_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"
+        android:text="@string/component_total_investment_public_health_for_city_title"
+        android:textSize="15sp"
+        android:textColor="@color/color_green_9"
+        android:textStyle="bold"/>
+
+    <!-- Msg above -->
+    <LinearLayout
+        android:id="@+id/component_total_public_health_investments_msg_above"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="170dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/component_total_public_health_investments_header_msg_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black_3"
+            android:text="@string/component_total_investment_public_health_for_city_prefix"/>
+
+        <TextView
+            android:id="@+id/component_total_public_health_investments_value_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColor="@color/color_green_blue_3"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/component_total_public_health_investments_header_msg_p2_above"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/component_total_investment_public_health_main_msg_p2"
+            android:textColor="@color/color_black_3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="8">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/component_chart_total_public_health_investments"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="200dp"
+            android:padding="10dp"/>
+
+        <!-- Msg aside -->
+        <LinearLayout
+            android:id="@+id/component_total_public_health_investments_msg_aside"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp">
+
+            <TextView
+                android:id="@+id/component_total_public_health_investments_header_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black_3"
+                android:text="@string/component_total_investment_public_health_for_city_prefix"/>
+
+            <TextView
+                android:id="@+id/component_total_public_health_investments_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:textColor="@color/color_green_blue_3"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/component_total_public_health_investments_header_msg_p2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/component_total_investment_public_health_main_msg_p2"
+                android:textColor="@color/color_black_3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

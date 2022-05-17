@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Pages.Home.HomeActivity"
+    android:background="@color/color_gray_1">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/settings_page_main_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <!-- About the project -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_page_lbl_about_project"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_black_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/settings_page_txt_about_project"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/settings_page_msg_about_project"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_page_lbl_know_more"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_green_blue_5"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+
+            <!-- About SIOPS -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_page_lbl_about_siops_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_black_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/settings_page_txt_about_siops"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/settings_page_msg_about_siops"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_page_lbl_know_more"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_green_blue_5"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+
+            <!-- About Fiocruz -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_page_lbl_about_fiocruz_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_black_3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/settings_page_lbl_about_fiocruz_description"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/settings_page_msg_about_fiocruz"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_page_lbl_know_more"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_green_blue_5"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+
+            <!-- Contact -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_page_lbl_about_contact_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_black_3"/>
+
+                <TextView
+                    android:id="@+id/settings_page_msg_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_page_txt_about_contact"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_green_blue_5"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+
+            <!-- Credits -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_page_lbl_about_credits_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_black_3"/>
+
+                <TextView
+                    android:id="@+id/settings_page_msg_credits"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/settings_page_txt_about_credits"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_green_blue_5"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:weightSum="2"
+                android:padding="0dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/settings_page_btn_evaluate_app"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingEnd="20dp"
+                        android:drawableLeft="@drawable/ico_evaluate_app_white"
+                        android:drawableStart="@drawable/ico_evaluate_app_white"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/background_rectangle_green_rounded_borders"
+                        android:textColor="@color/color_white"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="@string/settings_page_lbl_btn_evaluate_app"
+                        android:visibility="visible"
+                        tools:ignore="ButtonStyle" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp">
+
+                    <Button
+                        android:id="@+id/settings_page_btn_recommend_app"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingStart="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingEnd="20dp"
+                        android:drawableLeft="@drawable/ico_recommend_white"
+                        android:drawableStart="@drawable/ico_recommend_white"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/background_rectangle_green_rounded_borders"
+                        android:textColor="@color/color_white"
+                        android:textStyle="normal"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:text="@string/settings_page_lbl_btn_recommend_app"
+                        android:visibility="visible"
+                        tools:ignore="ButtonStyle" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/settings_page_app_version"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

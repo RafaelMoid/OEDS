@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/component_compare_list_expenses"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginEnd="25dp"
+    android:visibility="gone">
+
+    <!-- Header -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:weightSum="8"
+        android:background="@color/color_gray_4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="@string/component_declared_city_expenses_lbl_location"
+            android:textColor="@color/color_black_3"/>
+
+        <TextView
+            android:id="@+id/component_compare_list_expenses_city_a"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Altamira do Maranhão"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/color_black_1"/>
+
+        <TextView
+            android:id="@+id/component_compare_list_expenses_city_b"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="Recife"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="@color/color_black_1"/>
+
+    </LinearLayout>
+
+    <!-- Declared expenses -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/component_compare_list_expenses_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Bottom -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/component_declared_city_expenses_total_amount"
+            android:textColor="@color/color_black_3"/>
+
+        <TextView
+            android:id="@+id/component_compare_list_expenses_total_value_a"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="R$ 1.6M"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/color_black_1"/>
+
+        <TextView
+            android:id="@+id/component_compare_list_expenses_total_value_b"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="R$ 365.6M"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/color_black_1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

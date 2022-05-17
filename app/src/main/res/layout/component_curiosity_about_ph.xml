@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="40dp"
+    android:paddingStart="40dp"
+    android:paddingRight="40dp"
+    android:paddingEnd="40dp"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:alpha="1"
+        android:contentDescription="@string/description_ico_sus_cross_white"
+        android:src="@drawable/ico_logo_brazil_sus_search_white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1"
+        android:textSize="18sp"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:text="@string/app_idea_short"/>
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/component_curiosity_about_ph_search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_white_gray_borders"/>
+
+</LinearLayout>

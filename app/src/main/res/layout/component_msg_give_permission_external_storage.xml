@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@color/color_gray_1"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:alpha="1"
+        android:contentDescription="@string/description_ico_sd_card"
+        android:src="@drawable/ico_permission_storage_black" />
+
+    <TextView
+        android:id="@+id/component_permission_external_storage_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.1"
+        android:textSize="16sp"
+        android:textColor="@color/color_black_3"
+        android:text="@string/permissions_msg_need_permission_external_storage"/>
+
+    <Button
+        android:id="@+id/component_permission_external_storage_btn_force_request"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="30dp"
+        android:paddingStart="30dp"
+        android:paddingRight="30dp"
+        android:paddingEnd="30dp"
+        android:background="@drawable/background_rectangle_orange_rounded_borders"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:text="@string/permissions_msg_grant_permission"/>
+
+</LinearLayout>

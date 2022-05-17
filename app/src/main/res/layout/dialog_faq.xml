@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_info_main_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    android:background="@drawable/background_white">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/dialog_info_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_green_gradient_1"
+        android:padding="15dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_white_2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/dialog_faq_title"/>
+
+        <ImageView
+            android:id="@+id/dialog_info_btn_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ico_close_white"
+            android:contentDescription="@string/description_ico_close" />
+
+    </LinearLayout>
+
+    <!-- Body -->
+    <ScrollView
+        android:layout_below="@+id/dialog_info_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <FrameLayout
+                android:id="@+id/content_expander_app_info_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_what_is_siops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_is_siops_mandatory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_source_resources_health"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_actions_services_ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_actions_services_not_ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_how_can_influence_ph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_what_do_see_irregularity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_why_cant_search_certain_years"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_where_do_values_section_value_citizen_day_come_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_where_do_values_section_ranking_come_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_where_do_values_section_investments_ph_come_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_where_do_values_section_invested_resources_come_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/content_expander_what_are_legal_devices_siops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include layout="@layout/component_content_expander"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_gray_1"
+    tools:context=".Views.Pages.Home.Sharing.SharingActivity">
+
+    <!-- Root container -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <android.support.design.widget.AppBarLayout
+            android:layout_gravity="top|start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include layout="@layout/component_toolbar"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- Content -->
+        <ScrollView
+            android:id="@+id/sharing_scroll_view"
+            android:layout_gravity="bottom|end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <!-- Main container -->
+            <LinearLayout
+                android:id="@+id/sharing_main_container"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <!-- Display LDBSearch object that is going to be shared -->
+                <LinearLayout
+                    android:id="@+id/sharing_search_being_shared_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sharing_page_label_search_being_shared"
+                        android:textColor="@color/color_black_3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/sharing_search_being_shared_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_gray_9"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <!-- Preview of the content being shared -->
+                <LinearLayout
+                    android:id="@+id/sharing_shared_content_preview_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Shared content description -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sharing_page_content_being_shared"
+                        android:textSize="16sp"
+                        android:textColor="@color/color_black_3" />
+
+                    <!-- Shareable images -->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/sharing_content_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_white_squared_gray_borders"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/sharing_msg_shared_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/sharing_page_msg_no_img_selected"
+                        android:textColor="@color/color_gray_9"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                    <!-- Comment -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/sharing_page_label_share_it"
+                        android:textSize="16sp"
+                        android:textColor="@color/color_black_3" />
+
+                    <EditText
+                        android:id="@+id/sharing_shared_content_preview_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:inputType="textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical"
+                        android:minLines="4"
+                        android:background="@drawable/background_light_gray_with_borders"/>
+
+                </LinearLayout>
+
+                <!-- Bottom -->
+                <Button
+                    android:id="@+id/sharing_share_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingStart="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingEnd="30dp"
+                    android:background="@drawable/background_rectangle_orange_rounded_borders"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:text="@string/sharing_page_lbl_btn_share"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Msg: Need to search for something -->
+    <include
+        layout="@layout/component_msg_no_search_selected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Progress bar -->
+    <include
+        layout="@layout/component_progress"/>
+
+</android.support.design.widget.CoordinatorLayout>

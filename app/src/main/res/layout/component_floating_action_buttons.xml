@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/component_floating_action_buttons_container"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/component_fab_btn_add_share_btn"
+        android:src="@drawable/ico_more_white"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="8dp"
+        android:background="@drawable/background_circle_green"
+        android:contentDescription="@string/description_ico_toolbar_search_btn"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/component_fab_btn_favorite_btn"
+        android:src="@drawable/ico_tab_history_favorites_star_white"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/background_circle_orange"
+        android:contentDescription="@string/description_ico_toolbar_search_btn"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/component_fab_btn_share_btn"
+        android:src="@drawable/ico_share_white"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="8dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/background_circle_orange"
+        android:contentDescription="@string/description_ico_toolbar_search_btn"
+        android:visibility="visible"
+        tools:ignore="RtlSymmetry" />
+
+</LinearLayout>

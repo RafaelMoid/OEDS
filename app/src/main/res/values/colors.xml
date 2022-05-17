@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base colors -->
+    <color name="colorPrimary">@color/color_green_blue_2</color>
+    <color name="colorAccent">@color/color_green_blue_1</color>
+    <color name="colorPrimaryDark">@color/color_green_blue_5</color>
+
+    <!-- Grayish colors -->
+    <color name="color_gray_1">#fafafa</color>
+    <color name="color_gray_1_2">#f8faf8</color>
+    <color name="color_gray_1_5">#f3f3f3</color>
+    <color name="color_gray_2">#f0f0f0</color>
+    <color name="color_gray_3">#eaeaea</color>
+    <color name="color_gray_4">#e0e0e0</color>
+    <color name="color_gray_5">#cacaca</color>
+    <color name="color_gray_6">#c0c0c0</color>
+    <color name="color_gray_7">#bababa</color>
+    <color name="color_gray_8">#b0b0b0</color>
+    <color name="color_gray_9">#a0a0a0</color>
+    <color name="color_gray_10">#808080</color>
+
+    <!-- Blackish colors -->
+    <color name="color_black_1">#111111</color>
+    <color name="color_black_2">#222222</color>
+    <color name="color_black_3">#333333</color>
+
+    <!-- Blueish colors -->
+    <color name="color_blue_1">#3aadfc</color>
+    <color name="color_blue_2">#1796ed</color>
+    <color name="color_blue_2_5">#1b94e7</color>
+    <color name="color_blue_3">#027ed2</color>
+    <color name="color_blue_4">#007ace</color>
+    <color name="color_blue_5">#0069b1</color>
+    <color name="color_blue_6">#084e8a</color>
+    <color name="color_blue_7">#001429</color>
+
+    <!-- Greenish colors -->
+    <color name="color_green_1">#d8efee</color>
+    <color name="color_green_2">#81CEC0</color>
+    <color name="color_green_3">#3DBAA3</color>
+    <color name="color_green_4">#359685</color>
+    <color name="color_green_5">#349483</color>
+    <color name="color_green_6">#31897a</color>
+    <color name="color_green_7">#276E61</color>
+    <color name="color_green_8">#1d594e</color>
+    <color name="color_green_9">#19433B</color>
+    <color name="color_strong_green">#00B956</color>
+
+    <!-- Main gradient -->
+    <color name="color_green_blue_neg_1">#bbe1efee</color>
+    <color name="color_green_blue_0">#E1EFEE</color>
+    <color name="color_green_blue_1">#1AD9C0</color>
+    <color name="color_green_blue_1_5">#18B8BF</color>
+    <color name="color_green_blue_2">#29A8B7</color>
+    <color name="color_green_blue_3">#2BA7B8</color>
+    <color name="color_green_blue_3_5">#339DB2</color>
+    <color name="color_green_blue_4">#568AAD</color>
+    <color name="color_green_blue_5">#307F8E</color>
+    <color name="color_green_blue_6">#5081A5</color>
+
+    <!-- Whitish colors -->
+    <color name="color_white">#ffffff</color>
+    <color name="color_white_1">#fefefe</color>
+    <color name="color_white_2">#fafafa</color>
+
+    <!-- Hot colors -->
+    <color name="color_yellow">#e7e72f</color>
+    <color name="color_orange_2">#e7db2f</color>
+    <color name="color_orange_3">#e7ce2f</color>
+    <color name="color_orange_3_5">#F4B21A</color>
+    <color name="color_orange_4">#E7B62F</color>
+    <color name="color_orange_4_5">#FFA222</color>
+    <color name="color_orange_5">#EE6B2E</color>
+    <color name="color_orange_6">#ee5e2e</color>
+    <color name="color_red">#FF4814</color>
+    <color name="color_red_1">#cc2a0e</color>
+    <color name="color_red_2">#ba240a</color>
+
+    <!-- Other colors -->
+    <color name="color_purple_1">#5245C5</color>
+    <color name="color_red_purple">#CD0069</color>
+    <color name="color_lemon">#D0EA2B</color>
+
+    <!-- Transparent layers -->
+    <color name="transparent_black_1">#5a333333</color>
+    <color name="transparent_black_2">#73333333</color>
+    <color name="transparent_black_3">#96333333</color>
+
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".Views.Pages.Home.HomeActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Content -->
+        <ScrollView
+            android:id="@+id/dashboard_scroll_view"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/dashboard_main_container"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp">
+
+                <!-- Shareable content: p1 -->
+                <FrameLayout
+                    android:id="@+id/dashboard_shareable_content_p1_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <include layout="@layout/component_shareable_content_selector"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/dashboard_shareable_content_p1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp">
+
+                    <!-- Value per citizen, per day for public health -->
+                    <include layout="@layout/component_city_investment_on_ph_per_citizen_per_day"/>
+
+                    <!-- Value per citizen per year for PH -->
+                    <include
+                        layout="@layout/component_city_investment_on_ph_per_citizen_per_year"/>
+
+                    <LinearLayout
+                        android:id="@+id/dashboard_page_container_explanation_investments_year"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/color_green_blue_4"
+                            android:alpha="0.2"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:padding="20dp"
+                            android:background="@drawable/background_white_squared_gray_borders">
+
+                            <!-- Investments made by the own city on its public health -->
+                            <include
+                                layout="@layout/component_investment_own_city_from_value_citizen_year"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <!-- Investments made by other sources -->
+                            <include
+                                layout="@layout/component_investment_other_sources_from_value_citizen_year"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Shareable content: p2 -->
+                <FrameLayout
+                    android:id="@+id/dashboard_shareable_content_p2_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp">
+
+                    <include layout="@layout/component_shareable_content_selector"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/dashboard_shareable_content_p2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Ranking of cities x level self funding index -->
+                    <include layout="@layout/component_ranking_city_financial_autonomy_on_ph_investments"/>
+
+                </FrameLayout>
+
+                <!-- Shareable content: p3 -->
+                <FrameLayout
+                    android:id="@+id/dashboard_shareable_content_p3_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <include layout="@layout/component_shareable_content_selector"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/dashboard_shareable_content_p3"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Chart with the total investment made by the government on public health for a city -->
+                    <include layout="@layout/component_total_investment_on_city_ph"/>
+
+                    <!-- Federal Investments on the public health of a city -->
+                    <include layout="@layout/component_federal_investment_on_city_ph"/>
+
+                    <!-- State Investments on the public health of the city -->
+                    <include layout="@layout/component_state_investment_on_city_ph"/>
+
+                    <!-- Investments made by other sources on the public health of the city -->
+                    <include layout="@layout/component_other_sources_investment_on_city_ph"/>
+
+                    <!-- Percentage of the city own resources invested on public health -->
+                    <include layout="@layout/component_city_financial_autonomy_on_ph_investments"/>
+
+                </LinearLayout>
+
+                <!-- Shareable content: p4 -->
+                <FrameLayout
+                    android:id="@+id/dashboard_shareable_content_p4_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <include layout="@layout/component_shareable_content_selector"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/dashboard_shareable_content_p4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Expenses declared by the city government on public health -->
+                    <include layout="@layout/component_declared_city_expenses_on_ph"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- Social Network Picker -->
+        <FrameLayout
+            android:id="@+id/social_network_picker_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/component_social_network_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+        <!-- Confirm sharing action -->
+        <FrameLayout
+            android:id="@+id/dashboard_btns_confirm_cancel_sharing_action"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:visibility="visible"
+            android:background="@drawable/background_rectangle_black_transparent_no_borders_no_gradient">
+
+            <include layout="@layout/component_share_confirm_action"/>
+
+        </FrameLayout>
+
+        <!-- MSG: Search something -->
+        <FrameLayout
+            android:id="@+id/component_curiosity_about_ph_on_brazil_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_green_gradient">
+
+            <include layout="@layout/component_curiosity_about_ph"/>
+
+        </FrameLayout>
+
+        <!-- Msg: Need to give permission to access the external storage -->
+        <FrameLayout
+            android:id="@+id/component_permission_external_storage_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray_1"
+            android:visibility="gone">
+
+            <include layout="@layout/component_msg_give_permission_external_storage"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

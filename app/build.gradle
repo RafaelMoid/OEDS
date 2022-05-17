@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    flavorDimensions "server"
+    defaultConfig {
+        applicationId "br.com.eadfiocruzpe.OEDS"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        development {
+            dimension 'server'
+            applicationIdSuffix ".development"
+            buildConfigField 'String', 'SIOPS_URL', '"http://siops.datasus.gov.br/"'
+            buildConfigField 'String', 'OEDS_API_URL', '"http://oedsapi.fiocruz.br/"'
+            buildConfigField 'String', 'GOOGLE_PLACES_API_URL', '"https://maps.googleapis.com/maps/api/"'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    def room_version = "1.1.0"
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+
+    compile 'com.google.android.gms:play-services-places:15.0.1'
+
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.isseiaoki:simplecropview:1.1.4'
+
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+
+    compile 'org.jsoup:jsoup:1.11.3'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    testCompile 'junit:junit:4.12'
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/component_list_compare_declared_city_expenses"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingRight="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/component_list_compare_declared_city_expenses_name"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/color_black_3"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/component_list_compare_declared_city_expenses_a"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/color_green_blue_2"
+            android:text="@string/money_default_value"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/component_list_compare_declared_city_expenses_b"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/color_green_blue_2"
+            android:text="@string/money_default_value"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/component_list_compare_declared_city_expenses_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="@color/color_white"
+        android:background="@color/color_green_blue_3"
+        android:visibility="gone"/>
+
+</LinearLayout>

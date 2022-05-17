@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:ignore="UselessParent">
+
+    <ImageView
+        android:id="@+id/component_share_confirm_action_btn_undo_sharing_flow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="15dp"
+        android:src="@drawable/ico_close_black"
+        android:background="@drawable/background_circle_white"
+        android:contentDescription="@string/description_ico_close"/>
+
+    <Button
+        android:id="@+id/component_share_btn_confirm_sharing_action"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/background_rectangle_orange_rounded_borders"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:text="@string/sharing_page_lbl_btn_share"
+        android:visibility="visible"/>
+
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:popupTheme="@style/AppTheme"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="65dp"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/toolbar_main_content_container"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp"
+            tools:ignore="RtlSymmetry">
+
+            <LinearLayout
+                android:id="@+id/toolbar_page_title_sm_container"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start|center_vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/toolbar_page_icon"
+                    android:layout_gravity="center"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ico_info_black"
+                    android:contentDescription="@string/description_ico_toolbar"/>
+
+                <TextView
+                    android:id="@+id/toolbar_page_title_sm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Comparar"
+                    android:textColor="@color/color_blue_6"
+                    android:textStyle="normal"
+                    android:textSize="9sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:visibility="visible"
+                    tools:ignore="SmallSp" />
+
+            </LinearLayout>
+
+            <!-- Vertical slider that indicates the content being visualized on the page -->
+            <include
+                layout="@layout/component_vertical_slider_indicator"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <!-- Regular page title, initially displayed on all the pages -->
+            <TextView
+                android:id="@+id/toolbar_page_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/color_blue_6"
+                android:text="@string/toolbar_search"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:visibility="visible"/>
+
+            <!-- Title for comparison of two searches -->
+            <LinearLayout
+                android:id="@+id/toolbar_page_title_comparison_searches"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/toolbar_page_title_comparison_search_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/color_white"
+                    android:text="Cidade A - EE\nAAAA - Anual"
+                    android:textStyle="normal"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/color_white"
+                    android:text="x"
+                    android:textStyle="normal"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/toolbar_page_title_comparison_search_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/color_white"
+                    android:text="Cidade A - EE\nAAAA - Anual"
+                    android:textStyle="normal"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <!-- City search input -->
+            <EditText
+                android:id="@+id/toolbar_search_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:hint="@string/toolbar_search_input_default_title"
+                android:textColorHint="@color/color_blue_5"
+                android:textColor="@color/color_blue_6"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/background_white_gray_borders"
+                android:visibility="gone"/>
+
+            <!-- City description -->
+            <LinearLayout
+                android:id="@+id/toolbar_search_description"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="start|center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/toolbar_search_description_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Cidade"
+                    android:textColor="@color/color_white"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/toolbar_search_description_state_flag"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/flag_state_ac"
+                        android:contentDescription="@string/description_img_flag"/>
+
+                    <TextView
+                        android:id="@+id/toolbar_search_description_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Estado"
+                        android:textColor="@color/color_white_2"
+                        android:textStyle="normal"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/toolbar_search_description_time_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="AAAA - 6º Bimestre"
+                    android:textColor="@color/color_white_2"
+                    android:textStyle="normal"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+            <!-- Action buttons -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/toolbar_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/background_circle_transparent_white_borders"
+                    android:textColor="@color/color_white_2"
+                    android:textSize="15sp"
+                    android:text="@string/toolbar_label_back_btn"
+                    android:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/toolbar_search_btn"
+                    android:src="@drawable/ico_search_colorful"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/background_green_dark_blue_borders"
+                    android:contentDescription="@string/description_ico_toolbar_search_btn"
+                    android:visibility="gone"/>
+
+                <!-- Floating action buttons -->
+                <include
+                    layout="@layout/component_floating_action_buttons"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/component_gray_line"
+            android:id="@+id/toolbar_bottom_separator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

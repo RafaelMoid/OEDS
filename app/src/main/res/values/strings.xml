@@ -1,0 +1,377 @@
+<resources>
+
+    <!-- Global -->
+    <string name="app_name">Din. Saúde</string>
+    <string name="app_full_name_no_new_line">Onde está o dinheiro da Saúde?</string>
+    <string name="app_full_name">Onde está \no dinheiro da Saúde?</string>
+    <string name="app_idea">Conheça os investimentos federais, estaduais e municipais no orçamento da saúde pública e veja como o seu município tem aplicado esse recurso.</string>
+    <string name="app_idea_short">Saiba como o governo tem investido o dinheiro destinado à saúde pública em sua cidade</string>
+    <string name="money_default_value">R$ 0,00</string>
+    <string name="money_format">R$ %1$.2f</string>
+    <string name="money_format_str">R$ %1$s</string>
+    <string name="value_format_mi">%1$s MI</string>
+    <string name="value_format_bi">%1$s BI</string>
+    <string name="value_format_tri">%1$s TRI</string>
+    <string name="money_prefix">R$ </string>
+    <string name="percentage_format">%1$.2f</string>
+    <string name="msg_cannot_search_without_internet">Não é possível fazer uma pesquisa sem internet, mas se você tiver buscas no histórico ainda é possível visualizar os relatórios :)</string>
+    <string name="lbl_non_informed">N/I</string>
+
+    <!-- Splash -->
+    <string name="splash_label_start_btn">Clique aqui!</string>
+
+    <!-- Terms -->
+    <string name="page_terms">Termos e Condições</string>
+    <string name="txt_terms">Lorem ipsum dollor ....</string>
+
+    <!-- Main menu: Tab layout -->
+    <string name="menu_opt_search">Pesquisar</string>
+    <string name="menu_opt_favorites_history">Histórico</string>
+    <string name="menu_opt_compare">Comparar</string>
+    <string name="menu_opt_about">Sobre</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_label_field_city">Cidade: </string>
+    <string name="toolbar_label_field_time_range">Período: </string>
+    <string name="toolbar_label_back_btn">voltar</string>
+    <string name="toolbar_search_input_default_title">Digite o nome da cidade</string>
+    <string name="toolbar_search">Onde está o dinheiro da saúde?</string>
+
+    <!-- New Search Dialog -->
+    <string name="dialog_search_label_header">Pesquisar</string>
+    <string name="dialog_search_advanced_search_label">Pesquisa avançada</string>
+    <string name="dialog_search_title">Nós podemos te dizer qual foi o investimento com saúde pública em qualquer cidade do <b>Brasil</b></string>
+    <string name="dialog_search_label_location">Selecione uma <b>cidade</b></string>
+    <string name="dialog_search_label_time">Selecione um <b>período</b></string>
+    <string name="dialog_search_could_not_validate_search_params">Não foi possível validar os parâmetros da pesquisa, por favor se certifique de que todos os itens foram selecionados.</string>
+    <string name="dialog_search_invalid_state_item">Por favor selecione um \"Estado\" para a pesquisa</string>
+    <string name="dialog_search_invalid_year_item">Por favor selecione o \"Ano\" para a pesquisa</string>
+    <string name="dialog_search_msg_problem_get_data_siops_try_again">Houve um erro ao obter algumas informações do SIOPS</string>
+    <string name="dialog_search_msg_loading_info">Carregando informações …</string>
+    <string name="dialog_search_msg_limit_stored_searches_exceeded">O número máximo de pesquisas armazenadas em seu dispositivo foi excedido, por isso esta busca não será armazenada.\n\nVocê pode aumentar o limite de itens armazenados na tela de configurações.</string>
+    <string name="dialog_search_lbl_advanced_search">Busca avançada</string>
+    <string name="dialog_search_hint_input_auto_complete_search">nome da cidade</string>
+    <string name="dialog_search_msg_searching">Executando busca, por favor aguarde …</string>
+    <string name="dialog_search_msg_advanced_search_failed">Não foi possível realizar a busca avançada, por favor selecione os campos de busca.</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_page_title">Dashboard</string>
+    <string name="dashboard_page_create_search_message"><b>Você acha que isso é muito?</b><small>\nEntão faça uma pesquisa, veja os resultados e reavalie sua opinião</small></string>
+    <string name="dashboard_page_reference_information_source">As informações utilizadas nesta pesquisa foram retiradas do SIOPS, um sistema do governo federal onde todos os dados relativos à saúde pública devem ser declarados.\n\nO preenchimento dos dados do SIOPS se tornou uma obrigação legal das instituições públicas federais, municipais e estaduais, a partir da aprovação da Lei Complementar nº 141, de 13 de janeiro de 2012 (LC 141/2012).</string>
+    <string name="dashboard_page_lbl_federal_government">Gov. Federal</string>
+    <string name="dashboard_page_lbl_state_government">Gov. Estadual</string>
+    <string name="dashboard_page_lbl_city_government">Gov. Municipal</string>
+    <string name="dashboard_page_lbl_other_sources">Outras fontes</string>
+    <string name="dashboard_could_not_share_search_verify_params">Não foi possível compartilhar os resultados desta busca, por favor tente mais tarde.</string>
+    <string name="dashboard_page_msg_added_list_favorites">Esta pesquisa foi adicionada à lista de favoritos!</string>
+    <string name="dashboard_page_msg_removed_list_favorites">Esta pesquisa foi removida de sua lista de favoritos!</string>
+    <string name="dashboard_page_msg_added_list_shareable_items">Conteúdo adicionado à lista de itens para o compartilhamento</string>
+    <string name="dashboard_page_lbl_investments_per_year">Abaixo estão os valores do investimento em saúde pública por pessoa x ano, no período pesquisado</string>
+    <string name="dashboard_msg_could_not_load_indicators">Houve uma falha ao carregar os indicadores de saúde do município, alguns relatórios não serão exibidos.</string>
+    <string name="dashboard_msg_could_not_load_ranking">Não foi possível carregar os dados do ranking dos municípios, este relatório não será exibido.</string>
+    <string name="dashboard_msg_could_not_load_investments">Houve uma falha ao carregar os dados dos investimentos feitos no municípios, alguns relatórios não serão exibidos.</string>
+
+    <!-- UI Component: message to raise curiosity about the government investment on public health -->
+    <string name="component_curiosity_about_ph_on_brazil_main_msg">Você já se perguntou qual \né o valor investido pelo \ngoverno em sua saúde?</string>
+    <string name="component_curiosity_about_ph_on_brazil_make_search">Faça uma busca e \ndescubra em detalhes</string>
+    <string name="component_curiosity_hint_search_input">Nome da cidade</string>
+
+    <!-- UI Component: value per citizen per day available for PH -->
+    <string name="component_investment_per_citizen_per_day_calculating">Calculando o valor disponível para um cidadão de %1$s para investimentos em saúde pública por dia …</string>
+    <string name="component_investment_per_citizen_per_day_large_v"><![CDATA[<b>Este é o valor disponível por dia</b> para os investimentos em saúde pública de 1 habitante de %1$s]]></string>
+    <string name="component_investment_per_citizen_per_day_small_v"><![CDATA[<b>Este é o valor disponível por dia</b> para os investimentos em saúde pública de 1 habitante de %1$s]]></string>
+    <string name="component_investment_per_citizen_per_day_public_health_not_found">Não foi possível calcular o valor diário disponível para saúde pública de um cidadão do município selecionado.</string>
+
+    <!-- UI Component: value per citizen mYearyear (City) -->
+    <string name="component_city_investment_per_citizen_per_year_calculating">Calculando o valor disponível para um cidadão de %1$s para investimentos em saúde pública por ano …</string>
+    <string name="component_city_investment_per_citizen_per_year"><![CDATA[O valor disponível por ano para os investimentos em saúde pública para 1 habitante de <b>%1$s</b>]]></string>
+    <string name="component_city_investment_per_citizen_per_year_not_found">Não foi possível calcular o valor disponível por ano, para investimentos na saúde de 1 habitante da cidade pesquisada.</string>
+
+    <!-- UI Component: value invested by the own city, considering the value per citizen mYearyear -->
+    <string name="component_state_investment_per_citizen_per_year_calculating">Calculando o valor disponível para um cidadão do %1$s para investimentos em saúde pública por ano …</string>
+    <string name="component_investment_own_city_value_per_citizen_per_year"><![CDATA[Do valor disponível por ano, este foi o valor investido pela <b>própria prefeitura</b>]]></string>
+    <string name="component_state_investment_per_citizen_per_year_not_found">Não foi possível calcular o valor disponível por ano, para investimentos na saúde de 1 habitante do estado pesquisado.</string>
+
+    <!-- UI Component: value invested by other sources, considering the value per citizen mYearyear -->
+    <string name="component_federal_investment_per_citizen_per_year_calculating">Calculando o valor disponível para um cidadão do Brasil para investimentos em saúde pública por ano …</string>
+    <string name="component_investment_other_sources_value_per_citizen_per_year"><![CDATA[Do valor disponível por ano, este foi o valor investido por <b>outras esferas do governo</b>]]></string>
+    <string name="component_federal_investment_per_citizen_per_year_not_found">Não foi possível calcular o valor disponível por ano, para investimentos na saúde de uma pessoa no Brasil.</string>
+
+    <!-- UI Component: city financial autonomy on PH investments -->
+    <string name="component_autonomy_index_title">Obrigações da prefeitura</string>
+    <string name="component_autonomy_index_main_lbl">Pela legislação, o município tem que investir, no mínimo, 15% dos seus recursos próprios em saúde.</string>
+    <string name="component_autonomy_index_aux_info_msg">Ao lado está o percentual investido pela prefeitura de %1$s</string>
+
+    <!-- UI Component: ranking city financial autonomy on PH investments -->
+    <string name="component_chart_city_ranking_autonomy_index_main_lbl">Este ranking compara os municípios do Brasil quanto ao valor disponível para o investimento em saúde pública de uma pessoa por dia, ou seja, se você encontrar o valor R$ 2,50, isto significa que o valor disponível para os investimentos em saúde pública por dia para uma pessoa daquela cidade é R$ 2,50</string>
+    <string name="component_chart_city_ranking_autonomy_index_title">Ranking dos municípios do Brasil</string>
+    <string name="component_chart_city_ranking_autonomy_index_title_info">considerando o valor investido em saúde pública por pessoa x ano</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_y_axis">R$ pessoa x ano</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_avg">Média nacional do valor investido em saúde pública por pessoa x ano</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_city_effort_best_country">Melhor investimento em saúde pública por pessoa x ano do Brasil</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_city_effort_worst_country">Pior investimento em saúde pública por pessoa x ano do Brasil</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_city_effort_best_state">Melhor investimento em saúde pública por pessoa x ano do estado</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_city_effort_worst_state">Pior investimento em saúde pública por pessoa x ano do estado</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_city_effort_searched">Investimento em saúde pública por pessoa x ano da cidade pesquisada</string>
+    <string name="component_chart_city_ranking_autonomy_index_label_btn_more_info">saiba mais</string>
+
+    <!-- UI Component: total investment on city PH -->
+    <string name="component_total_investment_public_health_for_city_title">Investimentos em saúde pública</string>
+    <string name="component_total_investment_public_health_for_city_prefix">A prefeitura de %1$s recebeu</string>
+    <string name="component_total_investment_public_health_main_msg_p2"><![CDATA[para investir <b>em saúde pública</b> até a data da pesquisa.]]></string>
+    <string name="component_total_investment_public_health_for_city_postfix">este valor obrigatoriamente deve ser utilizado em ações de saúde pública na cidade.</string>
+
+    <!-- UI Component: total federal investment on PH -->
+    <string name="component_federal_investment_public_health_main_lbl">Este foi o valor investido pelo governo federal em saúde pública em todo o Brasil no período pesquisado</string>
+    <string name="component_federal_investment_public_health_not_found">O valor investido pelo governo federal na saúde pública nacional não foi encontrado.</string>
+
+    <!-- UI Component: federal investment on PH of a city -->
+    <string name="component_federal_investment_public_health_searching">Pesquisando o valor investido pelo governo federal em saúde pública no Brasil …</string>
+    <string name="component_federal_investment_public_health_city_searching">Pesquisando o valor investido pelo governo federal em saúde pública em %1$s …</string>
+    <string name="component_federal_investment_public_health_city_main_lbl">Governo federal</string>
+    <string name="component_federal_investment_public_health_city_not_found">O valor enviado pelo governo federal para a saúde pública do município não foi informado.</string>
+
+    <!-- UI Component: state investment on PH of a city -->
+    <string name="component_state_investment_public_health_city_searching">Pesquisando o valor investido pelo governo estadual em saúde pública em %1$s …</string>
+    <string name="component_state_investment_public_health_city">Governo %1$s</string>
+    <string name="component_state_investment_public_health_city_not_found">O valor enviado pelo governo estadual para a saúde pública do município não foi encontrado</string>
+
+    <!-- UI Component: state investment on PH of a city -->
+    <string name="component_other_sources_investment_public_health_city">Outras fontes</string>
+
+    <!-- UI Component: Other investments on city PH -->
+    <string name="component_other_investment_public_health_searching">Pesquisando o valor investido pela prefeitura de %1$s</string>
+    <string name="component_other_investment_public_health_main_lbl">Governo Municipal</string>
+    <string name="component_other_investment_public_health_not_found">O valor investido pelo próprio município não foi encontrado.</string>
+
+    <!-- UI Component: declared city expenses on PH -->
+    <string name="component_declared_city_expenses_table_title">Utilização dos recursos investidos</string>
+    <string name="component_declared_city_expenses_table">A tabela abaixo mostra como o dinheiro enviado para a saúde pública de %1$s tem sido utilizado pela prefeitura</string>
+    <string name="component_declared_city_expenses_table_searching">Pesquisando as despesas com saúde pública declaradas pela prefeitura de %1$s …</string>
+    <string name="component_declared_city_expenses_table_not_found">Não foi possível carregar a lista de despesas com saúde pública declarada pela prefeitura municipal</string>
+    <string name="component_declared_city_expenses_total_amount">Valor total: </string>
+
+    <!-- UI Component: AutoCompleteSearch -->
+    <string name="component_auto_complete_search_suggestion_format">%1$s - %2$s</string>
+    <string name="component_auto_complete_search_msg_searching_info">Buscando informações …</string>
+
+    <!-- UI Component: ShareableContentPicker -->
+    <string name="component_shareable_content_picker_wish_share_content">Deseja compartilhar a informação abaixo?</string>
+
+    <!-- UI Component: CompareHorizontalBarChart -->
+    <string name="component_compare_horizontal_bar_chart_loading">Carregando informações sobre %1$s …</string>
+    <string name="component_compare_horizontal_bar_chart_value_citizen_day"><![CDATA[Comparação do <b>valor disponível por dia</b> para investimentos em saúde pública para 1 habitante]]></string>
+    <string name="component_compare_horizontal_bar_chart_value_citizen_year"><![CDATA[Comparação do <b>valor disponível por ano</b> para investimentos em saúde pública para 1 habitante]]></string>
+    <string name="component_compare_horizontal_bar_chart_investments_own_city"><![CDATA[Do valor disponível por ano, comparação dos <b>valores investidos pela própria cidade</b>]]></string>
+    <string name="component_compare_horizontal_bar_chart_investments_other_sources"><![CDATA[Do valor disponível por ano, comparação dos <b>valores investidos por outras fontes</b>]]></string>
+    <string name="component_compare_horizontal_bar_chart_failed_load">Não foi possível esta informação</string>
+
+    <!-- UI Component: CompareParallelPieChart -->
+    <string name="component_compare_parallel_pie_chart_loading">Carregando informações sobre %1$s …</string>
+
+    <!-- UI Component: CompareExpenses -->
+    <string name="component_declared_city_expenses_lbl_location">Destino</string>
+
+    <!-- Search History -->
+    <string name="search_history_page_title">Histórico de buscas</string>
+    <string name="search_history_page_lbl_city">Cidade: </string>
+    <string name="search_history_page_lbl_searched_period">Período: </string>
+    <string name="search_history_page_txt_city_info">%1$s - %2$s</string>
+    <string name="search_history_page_txt_searched_period">Pesquisado dia %1$s</string>
+    <string name="search_history_page_confirmation_dialog_title">Atenção</string>
+    <string name="search_history_page_confirmation_dialog_msg">Tem certeza que deseja deletar esta busca?</string>
+    <string name="search_history_page_confirmation_dialog_remove_favorite_msg">Tem certeza que deseja remover esta busca da lista de favoritos?</string>
+    <string name="search_history_page_confirmation_dialog_label_btn_confirm">Sim, pode deletar.</string>
+    <string name="search_history_page_msg_empty_list">Seu histórico de buscas está vazio</string>
+    <string name="search_history_page_msg_need_favorite">Para utilizar esta funcionalidade você precisa favoritar uma busca.</string>
+    <string name="search_history_page_msg_do_search">Faça uma pesquisa</string>
+    <string name="search_history_page_lbl_list_item_see">ver</string>
+    <string name="search_history_page_lbl_list_item_delete">excluir</string>
+    <string name="search_history_page_lbl_list_item_favorite">favoritar</string>
+    <string name="search_history_page_lbl_list_item_unfavorite">desfavoritar</string>
+    <string name="search_history_page_lbl_btn_favorite">Favoritos</string>
+    <string name="search_history_page_lbl_btn_history">Histórico</string>
+
+    <!-- Compare -->
+    <string name="compare_page_title">Comparar</string>
+    <string name="compare_only_two_at_time">Só é possível comparar duas buscas por vez</string>
+    <string name="compare_lbl_items_selected_comparison">Itens selecionados para a comparação</string>
+    <string name="compare_lbl_selected_items">Selecione duas buscas para fazer a comparação</string>
+    <string name="compare_lbl_values_per_period">Valores por período</string>
+    <string name="compare_lbl_investments_ph">Investimentos em saúde</string>
+    <string name="compare_lbl_declared_expenses_ph">Utilização dos recursos investidos</string>
+    <string name="compare_prefix_lbl_investments_in">Investimentos em %1$s</string>
+
+    <!-- Sharing -->
+    <string name="sharing_popup_title">Compartilhamento</string>
+    <string name="sharing_popup_instructions">Clique no botão abaixo e então selecione os itens que você quer compartilhar.</string>
+    <string name="sharing_popup_select_social_network">Selecione a forma de compartilhamento</string>
+    <string name="sharing_page_title">Compartilhe</string>
+    <string name="sharing_page_label_search_being_shared">Pesquisa sendo compartilhada</string>
+    <string name="sharing_page_content_being_shared">Conteúdo que será compartilhado</string>
+    <string name="sharing_page_label_social_network">Onde você gostaria de compartilhar?</string>
+    <string name="sharing_page_label_share_it">Escreva uma mensagem e compartilhe</string>
+    <string name="sharing_page_lbl_btn_share">Compartilhar</string>
+    <string name="sharing_page_msg_please_search_something_then_hit_share_btn">A função de compartilhamento só funciona se você fizer uma pesquisa. Clique neste botão e faça uma pesquisa, em seguida clique no botão compartilhar.</string>
+    <string name="sharing_page_msg_no_search_selected">Esta funcionalidade só pode ser utilizada após a realização de uma pesquisa.</string>
+    <string name="sharing_page_lbl_click_search_btn">Clique aqui</string>
+    <string name="sharing_page_msg_please_select_social_network">Por favor escolha uma rede social</string>
+    <string name="sharing_page_msg_whatsapp_app_not_installed">Não será possível compartilhar este conteúdo no Whatsapp, aparentemente este app não está instalado em seu dispositivo. Por favor selecione outra rede social</string>
+    <string name="sharing_page_msg_failed_share_whatsapp">Não foi possível compartilhar este conteúdo no Whatsapp, por favor tente outra rede social</string>
+    <string name="sharing_page_msg_feature_available_soon">Esta funcionalidade ainda está em construção, mas em breve estará disponível.</string>
+    <string name="sharing_page_msg_no_img_selected">Nenhuma imagem será compartilhada</string>
+    <string name="sharing_page_msg_twitter_only_accept_one_img_time">O Twitter só aceita uma imagem por post, por favor deixe somente a imagem que você deseja compartilhar.</string>
+    <string name="sharing_page_format_share">\n\n%1$s</string>
+    <string name="msg_could_not_share_information_selected_method">Não foi possível compartilhar este conteúdo com o método escolhido, vamos utilizar uma outra forma de compartilhamento.</string>
+    <string name="msg_could_not_share_information">Não foi possível compartilhar este conteúdo devido a um erro de execução, por favor tente mais tarde.</string>
+
+    <!-- Permissions -->
+    <string name="permissions_msg_need_permission_external_storage">Para que você possa utilizar esta funcionalidade, nós precisamos de sua permissão para criar e armazenar imagens em seu telefone</string>
+    <string name="permissions_msg_need_permission_external_storage_after_being_refused">Caso você tenha marcado o checkbox \'Não perguntar novamente\' quando a permissão foi solicitada, </string>
+    <string name="permissions_msg_grant_permission">Conceder permissão</string>
+    <string name="permissions_msg_is_there_a_connected_sd_card">Não existe um dispositivo de memória onde nós possamos salvar a foto de compartilhamento, o cartão de memória do seu dispositivo está conectado?</string>
+
+    <!-- Images -->
+    <string name="images_msg_error_creating_img">Houve um erro ao criar da imagem que será compartilhada, por favor tente novamente</string>
+
+    <!-- Settings -->
+    <string name="settings_page_title">Sobre</string>
+    <string name="settings_page_lbl_storage">Armazenamento</string>
+    <string name="settings_page_lbl_max_num_searches_storage">Número máximo de buscas armazenadas no histórico</string>
+    <string name="settings_page_lbl_about_project">Sobre o projeto</string>
+    <string name="settings_page_txt_about_project"><![CDATA[O objetivo deste app é empoderar o cidadão com informações sobre o orçamento da saúde pública do seu município, possibilitando a análise dos investimentos executados pela prefeitura de sua cidade, através de uma interface simples e acessível.]]></string>
+    <string name="settings_page_lbl_about_siops_title">Sobre o SIOPS</string>
+    <string name="settings_page_txt_about_siops">O Sistema De Informações Sobre Orçamentos Públicos Em Saúde - SIOPS, disponibiliza informações sobre o orçamento público de saúde do Brasil.</string>
+    <string name="settings_page_lbl_about_fiocruz_description">Promover a saúde e o desenvolvimento social, gerar e difundir conhecimento científico e tecnológico, ser um agente da cidadania. Estes são os conceitos que pautam a atuação da Fundação Oswaldo Cruz (Fiocruz), vinculada ao Ministério da Saúde, a mais destacada instituição de ciência e tecnologia em saúde da América Latina.</string>
+    <string name="settings_page_lbl_about_fiocruz_title">Sobre a Fiocruz</string>
+    <string name="settings_page_lbl_know_more"><![CDATA[<b>Saiba mais</b>]]></string>
+    <string name="settings_page_lbl_about_contact_title">Contato</string>
+    <string name="settings_page_txt_about_contact"><![CDATA[<b>Entre em contato</b> para tirar qualquer dúvida ou reportar um bug encontrado]]></string>
+    <string name="settings_page_lbl_about_credits_title">Créditos</string>
+    <string name="settings_page_txt_about_credits"><![CDATA[<b>Saiba mais</b> sobre a equipe que desenvolveu este aplicativo]]></string>
+    <string name="settings_page_lbl_btn_evaluate_app">Avalie o aplicativo</string>
+    <string name="settings_page_lbl_btn_recommend_app">Indique para\num amigo</string>
+    <string name="settings_page_app_version">Versão 1.0.0\nAtualizada em 27/07/2018</string>
+    <string name="settings_page_prefix_market">market://details?id=</string>
+    <string name="settings_page_prefix_google_play">https://play.google.com/store/apps/details?id=</string>
+    <string name="settings_page_package_name">br.com.eadfiocruzpe</string>
+    <string name="settings_page_url_project">http://dinheirosaude.fiocruz.br/</string>
+    <string name="settings_page_url_siops">http://siops.datasus.gov.br/</string>
+    <string name="settings_page_url_fiocruz">https://portal.fiocruz.br/</string>
+    <string name="settings_page_url_contact">http://dinheirosaude.fiocruz.br/#contato</string>
+    <string name="settings_page_url_credits">http://dinheirosaude.fiocruz.br/#equipe</string>
+
+    <!-- Dialog Information -->
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_confirmation">Confirmação</string>
+    <string name="dialog_no_connectivity">Sem conexão</string>
+    <string name="lbl_title_success">Sucesso!</string>
+    <string name="lbl_title_information">Informação</string>
+    <string name="lbl_title_attention">Atenção</string>
+    <string name="lbl_title_caution">Cuidado</string>
+    <string name="lbl_btn_confirm">Confirmar</string>
+    <string name="lbl_btn_ok_navigate_login">Acessar minha conta</string>
+    <string name="lbl_btn_cancel">Cancelar</string>
+    <string name="lbl_btn_start">Começar</string>
+    <string name="txt_msg_must_be_signed_in">Você precisa acessar o app com sua conta para utilizar esta funcionalidade</string>
+    <string name="txt_msg_seems_offline">Você não está conectado a internet. Por isso todas as informações geradas só estarão disponíveis localmente até que você se conecte novamente.</string>
+    <string name="txt_msg_deleted_items">Ao deletar este item a operação não poderá ser desfeita.</string>
+    <string name="txt_msg_thanks_for_joining_us">Obrigado por se juntar a gente, seja bem vindo!</string>
+    <string name="txt_msg_your_data_in_sync">Suas informações foram atualizadas com os nossos servidores e estão disponíveis em todos os seus ambientes.</string>
+
+    <!-- Dialog FAQ -->
+    <string name="dialog_faq_title">Perguntas frequentes</string>
+
+    <!-- Errors -->
+    <string name="error_api_unknown">Não foi possível executar uma operação com o servidor, pois houve um erro desconhecido.</string>
+    <string name="error_failed_connect_to_server">Houve uma falha ao se conectar com o servidor.</string>
+    <string name="error_failed_connect_to_server_try_again">Houve uma falha ao se conectar com o servidor. Tente novamente</string>
+    <string name="error_format_field_must_be_filled">O %1$s deve ser preenchido.</string>
+
+    <!-- Date labels -->
+    <string-array name="month_labels">
+        <item>Jan</item>
+        <item>Fev</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Set</item>
+        <item>Out</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </string-array>
+
+    <string-array name="brazilian_states">
+        <item>UF</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="options_max_number_stored_searches_cache">
+        <item>500</item>
+        <item>1000</item>
+        <item>10000</item>
+        <item>100000</item>
+        <item>1000000</item>
+    </string-array>
+
+    <!-- Error messages -->
+    <string name="error_msg_failed_token">\'NoneType\' object has no attribute \'__getitem__\'</string>
+    <string name="error_msg_invalid_object">Expected BEGIN_ARRAY but was STRING</string>
+
+    <!-- Images description -->
+    <string name="description_ico_toolbar">ico toolbar</string>
+    <string name="description_ico_sus_cross_white">ico sus cross white</string>
+    <string name="description_ico_tab">ico tab</string>
+    <string name="description_ico_government_investment">ico government investment</string>
+    <string name="description_ico_value_per_citizen_per_day">ico value per citizen x day</string>
+    <string name="description_ico_value_per_citizen_per_year">ico value per citizen x mYear</string>
+    <string name="description_ico_state_value_per_citizen_per_year">ico value per citizen x mYear</string>
+    <string name="description_ico_close">ico close</string>
+    <string name="description_ico_toolbar_search_btn">ico toolbar search button</string>
+    <string name="description_ico_colorful_search_btn">ico colorfull search button</string>
+    <string name="description_ico_btn_details">ico btn details</string>
+    <string name="description_ico_btn_delete">ico btn delete</string>
+    <string name="description_ico_empty_list">ico empty list</string>
+    <string name="description_ico_share">ico share</string>
+    <string name="description_ico_social_network">ico social network</string>
+    <string name="description_shared_content">img shared content</string>
+    <string name="description_ico_national_avg">ico national average</string>
+    <string name="description_logo_fiocruz">description logo fiocruz</string>
+    <string name="description_ico_empty_white_circle">ico circle</string>
+    <string name="description_ico_sd_card">ico sd card</string>
+    <string name="description_ico_dialog_info_msg">ico dialog info msg</string>
+    <string name="description_arrow_content_expander">ico arrow content expander</string>
+    <string name="description_img_flag">img flag</string>
+    <string name="description_ico_chart_legend">ico chart legend</string>
+    <string name="description_img_shareable_item">img shareable item</string>
+
+</resources>
